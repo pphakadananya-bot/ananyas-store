@@ -238,23 +238,51 @@ html {
     margin-top: 10px;
 }
 
+/* จัดการส่วน DM here และไอคอน */
+#contact {
+    text-align: center;
+    margin: 25px 0;
+}
+
+#contact p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px; /* เว้นระยะห่างระหว่างปุ่ม */
+}
+
 .icon-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #ff85a2;
-    font-size: 26px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%; /* ทำเป็นปุ่มวงกลม */
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
 }
 
+/* ขนาดรูปไอคอนข้างใน */
+.icon-btn i {
+    font-size: 24px;
+}
+
+/* สีไอคอนตามแบรนด์จริงแบบละมุน */
+.icon-btn.line i { color: #06C755; }
+.icon-btn.ig i { color: #E4405F; }
+.icon-btn.whatsapp i { color: #25D366; }
+.icon-btn.tiktok i { color: #000000; }
+
+/* เอฟเฟกต์ตอนกด/ลอยตัว */
 .icon-btn:hover {
     transform: translateY(-3px);
-    background-color: #ff85a2;
-    color: #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
