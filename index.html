@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANANYA'S STORE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ANANYA'S STORE</h1>
+  <div id="contact">
+    <p>สั่งซื้อ ทักได้ทุกช่องทางเลยค่ะ</p>
+    <a class="chan" href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank">
+      <span class="icon">LINE</span>
+      <span>ชื่อร้านใน LINE</span>
+    </a>
+    <a class="chan" href="https://instagram.com/YOUR_IG" target="_blank">
+      <span class="icon">IG</span>
+      <span>ชื่อร้านใน IG</span>
+    </a>
+    <a class="chan" href="https://facebook.com/YOUR_FB" target="_blank">
+      <span class="icon">FB</span>
+      <span>ชื่อร้านใน Facebook</span>
+    </a>
+	<a class="chan" href="https://tiktok.com/YOUR_TikTok" target="_blank">
+      <span class="icon">TikTok</span>
+      <span>ชื่อร้านใน TikTok</span>
+    </a>
+  </div>
+ <nav>
+    <a href="#" data-filter="all">All</a>
+    <a href="#" data-filter="new">New Arrivals</a>
+    <a href="#" data-filter="accessories">Accessories</a>
+    <a href="#" data-filter="clothing">Clothing</a>
+    <a href="#" data-filter="beauty">Beauty</a>
+  </nav>
+<main id="product-list"></main>
+<section id="summary">
+    <h2>รายการที่เลือก</h2>
+    <ul id="order-list"></ul>
+    <p>จำนวนรวม: <span id="count">0</span> ชิ้น</p>
+    <p class="grand">ยอดรวม: ฿<span id="total">0</span></p>
+  </section>
+  <a href="#summary" id="cart-btn">ตะกร้า (<span id="cart-count">0</span> ชิ้น)</a>
+</body>
+<script src="products.js"></script>
+<script src="script.js"></script>
+</html>
